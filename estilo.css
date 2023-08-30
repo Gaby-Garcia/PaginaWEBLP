@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lora:wght@500&display=swap');
+
+/*
+STYLE GUIDE--------
+RESET
+LAYOUT
+GENERIC ITEMS
+PARTS OF THE WEB
+LIST
+FORM
+ANIMATIONS
+
+COLORS:
+color1 =>  #2c3e56;
+color2 =>  #34495e;
+color3 =>  #3498db;
+color4 =>  #fff;
+
+*/
+
+/*RESET*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+
+/*LAYOUT*/
+body {
+ /* 
+  font: 300 20px/1.7 "Lato";*/
+  text-align: center;
+  font-family: 'Lora', serif;
+  overflow-x: hidden;
+}
+.header {
+  display: flex;
+  justify-content: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+.navbar {
+  display: flex;
+  justify-content: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-productos{text-align: center;}
+.list-marcas{display: flex; justify-content: center; align-items:center;}
+
+/*.list-marcas figure{display: flex; justify-content: center; align-items: center; flex-flow: column;}
+
+/*GENERIC ITEMS*/
+.header {
+  height: 450px;
+  background: url(../Image/Fondo5.jpg) no-repeat center top;
+  background-size:contain;
+}
+.navbar {
+  height: 63px;
+  background: red;
+}
+.navbar a {
+  color: #fff;
+  padding: 0 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font: 20px 'Stint Ultra Condensed';
+}
+.title{margin-bottom: 40px; font: 60px 'Stint Ultra Condensed'; text-transform: uppercase;}
+p{margin-bottom: 40px;}
+
+.boton{border:2px solid #fff; padding: 10px 40px; display: inline-block; text-decoration: none; color: #fff;}
+
+/*3 PART OF THE WEB*/
+.content {
+  padding: 80px 0;
+}
+
+.galeria-productos {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.imagen-productos {
+  width: 24%;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.contenedor-conocenos2 article img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  left: 20px;
+  position: 100%;
+  font-size: 70px;
+  padding-right: 100%;
+}
+
+.contenedor-conocenos2 p {max-width: 1050px; margin: 0 auto;}
+
+
+.imagen-productos > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hover-galeria {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: scale(0);
+  background: hwb(212 19% 31% / 0.601);
+  transition: transform 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hover-galeria img {
+  width: 50px;
+}
+
+.hover-galeria p {
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.imagen-productos:hover .hover-galeria {
+  transform: scale(1);
+}
+
+/*Fondo de conocenos*/
+.contenedor-conocenos2 {
+  background: #2c3e50;
+  color: #fff;
+}
+.contenedor-localizacion {
+  background: #a72525;
+  color: #fff;
+}
+
+.contenedor-iconos{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  left: 20px;
+  position: 100%;
+  font-size: 70px;
+  padding-right: 100%;
+
+}
+
+    .conocenos p {max-width: 1050px; margin: 0 auto;}
+
+    .contenedor-productos{background:#2c3e50; color:#fff ;}
+
+    .tarifa{ background: url(../Image/Fondo4.jpg) no-repeat center top; background-size: cover; color: #fff;}
+    .conocenos{max-width: 1055px; margin: 0 auto;}
+   /* .conocenos p {max-width: 450px;}*/
+    .contenedor-localizacion{ color: #fff;padding-bottom:0;}
+    .contenedor-localizacion .map image{max-width: 100%; width: 100%; }
+ 
+/*.list-marcas figure{position: relative; width: 150px; height: 190px;}*/
+.list-marcas figure::after{content: "";position: absolute; top: 0; left: 0;
+border-radius: 50%; z-index: 0; background: #fff;}
+
+.list-marcas image{position: relative;z-index: 0; width: 150px; height: 150px;}
+
+.list-marcas li{ padding: 0 30px;}
+.list-marcas figcaption{ position: relative; left: 0; top: 0; bottom: -40px;}
+
+/* footer */
+
+footer {
+  background: #2c3e50;
+  padding: 60px 0 30px 0;
+  margin: auto;
+  overflow: hidden;
+}
+
+.contenedor-footer {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ccc;
+}
+
+.content-foo {
+  text-align: center;
+}
+
+.content-foo h4 {
+  color: #fff;
+  border-bottom: 3px solid #af20d3;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.content-foo p {
+  color: #ccc;
+}
+
+.titulo-final {
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0 0 0;
+  color: #9e9797;
+}
+
